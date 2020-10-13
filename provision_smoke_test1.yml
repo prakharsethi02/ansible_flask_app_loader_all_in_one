@@ -1,0 +1,8 @@
+- name: End to end smoke tests
+  hosts: app_servers
+  become: false
+  gather_facts: false
+  tags:
+    - smoketest 
+  roles:
+    - smokeTest1
